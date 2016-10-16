@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.fhs.nos.parksim.gui.GuiController">
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="labelNormal" text="Normal:" />
+                  <TextField fx:id="textDummy" promptText="gib was ein" />
+                  <ListView fx:id="listNormal" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="labelHandicapped" text="Handicapped:" />
+                  <ListView fx:id="listHandicapped" style="-fx-background-color: #AAFFAA;" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
